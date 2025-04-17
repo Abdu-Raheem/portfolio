@@ -1,0 +1,130 @@
+:root {
+    --bg: #0f172a;
+    --text: #e2e8f0;
+    --accent: #7c3aed;
+    --card: rgba(30, 41, 59, 0.7);
+  }
+  
+  [data-theme='light'] {
+    --bg: #f3e8ff;
+    --text: #1e1b4b;
+    --accent: #7c3aed;
+    --card: rgba(247, 243, 255, 0.8);
+  }
+  
+  .profile-pic {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 4px solid var(--accent);
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(124, 58, 237, 0.4);
+  }
+  
+  
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+  }
+  
+  nav {
+    background: var(--card);
+    backdrop-filter: blur(10px);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 1.6em;
+    color: var(--accent);
+  }
+  
+  #themeToggle {
+    border: none;
+    background: var(--accent);
+    color: var(--bg);
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  section {
+    width: 85%;
+    margin: 40px auto;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .hero span {
+    color: var(--accent);
+  }
+  
+  .socials a {
+    text-decoration: none;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 8px;
+    display: inline-block;
+    transition: 0.3s ease;
+  }
+  
+  .socials a:hover {
+    background: var(--accent);
+    color: var(--bg);
+  }
+  
+  .skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+  }
+  
+  .skill-grid span {
+    background: var(--card);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .card {
+    background: var(--card);
+    padding: 15px 20px;
+    border-radius: 12px;
+    margin: 10px 0;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--card);
+  }
+  
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
